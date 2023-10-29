@@ -1,0 +1,88 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+.produtops ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+}
+.produtos li {
+  width: 500px;
+  height: 40px;
+  margin-bottom: 5px;
+  border-radius: 5px;
+  gap: 10px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+.produtos li:hover {
+  cursor: pointer;
+  background-color: #141313;
+}
+
+.pagination-style {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.pagination {
+  gap: 10px;
+
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+  cursor: pointer;
+}
+
+.pagination a {
+  padding: 10px;
+  border-radius: 5px;
+  color: white;
+  font-weight: bold;
+  @media (max-width: 760px) {
+    font-size: 12px;
+  }
+}
+
+.pagination__link {
+  font-weight: bold;
+}
+
+.pagination__link--active a {
+  color: white;
+  background: red;
+}
+
+.pagination__link--disabled a {
+  color: white;
+  background: blue;
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+}
